@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 
 class WeatherService {
   WeatherService();
-  final String apiKey = "b4e8100bf52a4265b80164524241009";
+  final String apiKey = "Ur Api";
   Future<WeatherModel> getWeather(String city) async {
     try {
       final response = await Dio().get("http://api.weatherapi.com/v1/current.json?key=$apiKey&q=$city&aqi=no");
